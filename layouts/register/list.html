@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saasley | 404</title>
+    <title> {{.Site.Title }}| {{.Title}}</title>
 
     <!--:AOS Animation:-->
     <link rel="stylesheet" href="/assets/vendor/node_modules/css/aos.css" />
@@ -28,22 +28,42 @@
   <body>
     {{partial "navigation.html"}}
 
-    <section class="position-relative">
-      <div class="container pt-12 pb-9 pt-lg-15 pb-lg-12 text-center">
-        <span class="material-symbols-rounded text-warning fs-1 align-middle d-block mb-4 fw-normal"
-          >pest_control</span
-        >
-        <h1 class="mb-4 display-2">404</h1>
-        <h4 class="mb-0">The page you're looking for is not found!</h4>
+    <section class="position-relative pt-12 pt-lg-15 pb-9 pb-lg-12">
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5 col-xl-4">
+            <h2 class="display-6">Create account!</h2>
+            <p class="text-muted mb-4">Fill the details to Register an account...</p>
+            <form>
+              <div class="mb-3">
+                <label for="user_name" class="form-label">Name</label>
+                <input id="user_name" type="text" class="form-control" placeholder="John" />
+              </div>
+              <div class="mb-3">
+                <label for="user_work_email" class="form-label">Mobile No</label
+                ><input
+                  id="user_work_email"
+                  type="number"
+                  class="form-control"
+                  placeholder="9799287557"
+                />
+              </div>
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
     <!--:Footer:-->
-   {{partial "footer.html" }}
+    {{partial "footer.html"}}
 
     <!--:Theme script:-->
     <!--:Back to Top Button:-->
-    <a href="404.html#" class="toTop text-white">
+    <a href="signup.html#" class="toTop text-white">
       <span class="material-symbols-rounded align-middle"> expand_less </span>
     </a>
 

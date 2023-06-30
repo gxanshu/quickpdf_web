@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> {{.Site.Title}} | {{.Title}}</title>
+
+    <!--:AOS Animation:-->
+    <link rel="stylesheet" href="/assets/vendor/node_modules/css/aos.css" />
+    <!--:Google fonts:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;0,400;1,400&family=Hanken+Grotesk:wght@100..900&family=Libre+Baskerville:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--:Material symbols sharp icons:-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!--:Main style:-->
+    <link rel="stylesheet" href="/assets/css/theme.min.css" />
+  </head>
+
+  <body>
+    {{ partial "navigation.html" . }}
+
+    <section class="position-relative pt-12 pt-lg-15 pb-9">
+      <svg
+        class="position-absolute start-0 bottom-0 text-dark h-auto d-none d-md-block"
+        fill="currentColor"
+        width="100%"
+        height="276"
+        viewBox="0 0 1200 276"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 132L50 102C100 72 200 12 300 18C400 24 500 96 600 90C700 84 800 0 900 0C1000 0 1100 84 1150 126L1200 168V276H1150C1100 276 1000 276 900 276C800 276 700 276 600 276C500 276 400 276 300 276C200 276 100 276 50 276H0V132Z"
+        ></path>
+      </svg>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h2 class="display-5 text-center">Get in Touch Now</h2>
+            <p class="text-center mb-5">let us create your newspaper with Quality</p>
+            <div class="card border-0 rounded-4 shadow-lg py-5 px-4">
+              <div class="position-relative z-index-1">
+                <form>
+                  <div class="mb-3">
+                    <label for="demo_f_name" class="form-label">First Name</label>
+                    <input id="demo_f_name" type="text" class="form-control" placeholder="Anshu" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="demo_l_name" class="form-label">Last Name</label>
+                    <input id="demo_l_name" type="text" class="form-control" placeholder="Meena" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="demo_email" class="form-label"
+                      >Work Number <small class="text-danger">*</small>
+                    </label>
+                    <input
+                      id="demo_email"
+                      type="number"
+                      class="form-control"
+                      placeholder="9799287557"
+                      required=""
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="demo_job_title" class="form-label">Newspaper Name</label
+                    ><input
+                      id="demo_job_title"
+                      type="text"
+                      class="form-control"
+                      placeholder="AajTak"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Type</label>
+                    <select name="teamSize" class="form-select" id="teamSize">
+                      <option value="Daily">Daily</option>
+                      <option value="Weekly">Weekly</option>
+                      <option value="Monthly">Monthly</option>
+                    </select>
+                  </div>
+                  <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--:Footer:-->
+    {{partial "footer.html"}}
+
+    <!--:Theme script:-->
+    <!--:Back to Top Button:-->
+    <a href="demo-request.html#" class="toTop text-white">
+      <span class="material-symbols-rounded align-middle"> expand_less </span>
+    </a>
+
+    <script src="/assets/js/theme.bundle.js"></script>
+  </body>
+</html>
