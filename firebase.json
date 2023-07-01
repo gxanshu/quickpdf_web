@@ -2,10 +2,6 @@
   "hosting": {
     "public": "public",
     "site": "quickpdf",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
